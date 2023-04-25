@@ -191,3 +191,16 @@ cards
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
 }
+
+@media screen and (min-width: 768px) {
+  .cards-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .cards-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
