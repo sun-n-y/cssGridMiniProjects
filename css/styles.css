@@ -192,7 +192,9 @@ cards
   justify-items: center;
 }
 
-@media screen and (min-width: 768px) {
+/* ===============three column layout with media queries================ */
+
+/* @media screen and (min-width: 768px) {
   .cards-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -203,4 +205,26 @@ cards
   .cards-center {
     grid-template-columns: 1fr 1fr 1fr;
   }
+} =======================================================================*/
+
+/*========================================================================
+
+Three column layout using minmax auto fit and fill
+
+1. how many columns you want on bigger screen size?
+  3 columns with a max width of 1170px
+2. what is going to be the gap between columns?
+  1 rem is 16 px, and 2rem is one gap, so total gaps of 2 = 64px
+3. width of one column?
+  1170 - 64 = 1106 
+  1106/ (divided by amount of columns wanted = 3) = 368.66667px ~ 368px
+
+  3 columns = (1170 - 64)/3 = 368
+  4 columns = (1170 - 96)/4 = 268
+=========================================================================*/
+
+.cards-center {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
 }
