@@ -136,10 +136,6 @@ hero
   align-items: center;
 }
 
-.hero-banner {
-  /* background: blue;
-  text-align: center; */
-}
 .hero-banner p {
   width: 80%;
   max-width: 560px;
@@ -157,3 +153,9 @@ hero
       url(../images/image-2.jpeg) center/cover fixed no-repeat;
   }
 }
+
+/* 
+=================
+cards
+=================
+ */
